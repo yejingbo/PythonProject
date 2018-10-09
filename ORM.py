@@ -156,7 +156,7 @@ class Model(dict,metaclass=ModelMetaClass):
                 value=field.default() if callable(field.default) else field.default
                 logging.debug('using default value for %s: %s' % (key, str(value)))
                 setattr(self,key,value)
-        return value
+        return valuedtu
 
 
 
